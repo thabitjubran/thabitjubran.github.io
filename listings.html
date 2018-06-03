@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Team Echo Realty</title>
+<title>The Estate - Listings</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="The Estate Teplate">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/listings_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/listings_responsive.css">
 </head>
 
 <body>
@@ -21,52 +18,25 @@
 	
 	<!-- Home -->
 	<div class="home">
+		<!-- Image by: https://unsplash.com/@jbriscoe -->
+		<div class="home_background" style="background-image:url(images/listings.jpg)"></div>
 		
-		<!-- Home Slider -->
-		<div class="home_slider_container">
-			<div class="owl-carousel owl-theme home_slider">
-
-				<!-- Home Slider Item -->
-				<div class="owl-item home_slider_item">
-					<!-- Image by https://unsplash.com/@aahubs -->
-					<div class="home_slider_background" style="background-image:url(images/home_slider_bcg.jpg)"></div>
-					<div class="home_slider_content_container text-center">
-						<div class="home_slider_content">
-							<h1 data-animation-in="flipInX" data-animation-out="animate-out fadeOut">find your home</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="home_content">
+						<div class="home_title">
+							<h2>listings</h2>
 						</div>
-					</div>
-				</div>
-
-				<!-- Home Slider Item -->
-				<div class="owl-item home_slider_item">
-					<!-- Image by https://unsplash.com/@aahubs -->
-					<div class="home_slider_background" style="background-image:url(images/home_slider_bcg.jpg)"></div>
-					<div class="home_slider_content_container text-center">
-						<div class="home_slider_content">
-							<h1 data-animation-in="flipInX" data-animation-out="animate-out fadeOut">find your home</h1>
-						</div>
-					</div>
-				</div>
-
-				<!-- Home Slider Item -->
-				<div class="owl-item home_slider_item">
-					<!-- Image by https://unsplash.com/@aahubs -->
-					<div class="home_slider_background" style="background-image:url(images/home_slider_bcg.jpg)"></div>
-					<div class="home_slider_content_container text-center">
-						<div class="home_slider_content">
-							<h1 data-animation-in="flipInX" data-animation-out="animate-out fadeOut">find your home</h1>
+						<div class="breadcrumbs">
+							<span><a href="index.html">Home</a></span>
+							<span><a href="#"> Search</a></span>
+							<span><a href="#"> Listings</a></span>
 						</div>
 					</div>
 				</div>
 			</div>
-			
-			<!-- Home Slider Nav -->
-			<div class="home_slider_nav_left home_slider_nav d-flex flex-row align-items-center justify-content-end">
-				<img src="images/nav_left.png" alt="">
-			</div>
-
 		</div>
-
 	</div>
 
 	<!-- Header -->
@@ -92,9 +62,9 @@
 
 						<nav class="main_nav">
 							<ul class="main_nav_list">
-								<li class="main_nav_item"><a href="#">home</a></li>
+								<li class="main_nav_item"><a href="index.html">home</a></li>
 								<li class="main_nav_item"><a href="about.html">about us</a></li>
-								<li class="main_nav_item"><a href="listings.html">listings</a></li>
+								<li class="main_nav_item"><a href="#">listings</a></li>
 								<li class="main_nav_item"><a href="news.html">news</a></li>
 								<li class="main_nav_item"><a href="contact.html">contact</a></li>
 							</ul>
@@ -127,7 +97,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col">
-								<a href="#">home</a>
+								<a href="index.html">home</a>
 							</div>
 						</div>
 					</div>
@@ -145,7 +115,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col">
-								<a href="listings.html">listings</a>
+								<a href="#">listings</a>
 							</div>
 						</div>
 					</div>
@@ -172,16 +142,21 @@
 		</div>
 
 	</header>
-	
-	<!-- Search Box -->
 
-	<div class="search_box">
+	<!-- Listings -->
+
+	<div class="listings">
 		<div class="container">
 			<div class="row">
-				<div class="col">
+				
+				<!-- Search Sidebar -->
 
-					<div class="search_box_outer">
-						<div class="search_box_inner">
+				<div class="col-lg-4 sidebar_col">
+					<!-- Search Box -->
+
+					<div class="search_box">
+
+						<div class="search_box_content">
 
 							<!-- Search Box Title -->
 							<div class="search_box_title text-center">
@@ -191,19 +166,11 @@
 								</div>
 							</div>
 
-							<!-- Search Arrow -->
-							<div class="search_arrow_box">
-								<div class="search_arrow_box_inner">
-									<div class="search_arrow_circle d-flex flex-column align-items-center justify-content-center"><span>Search it here</span></div>
-									<img src="images/search_arrow.png" alt="">
-								</div>
-							</div>
-
 							<!-- Search Form -->
 							<form class="search_form" action="#">
 								<div class="search_box_container">
 									<ul class="dropdown_row clearfix">
-										<li class="dropdown_item dropdown_item_5">
+										<li class="dropdown_item">
 											<div class="dropdown_item_title">Keywords</div>
 											<select name="keywords" id="keywords" class="dropdown_item_select">
 												<option>Any</option>
@@ -211,7 +178,7 @@
 												<option>Keyword 2</option>
 											</select>
 										</li>
-										<li class="dropdown_item dropdown_item_5">
+										<li class="dropdown_item">
 											<div class="dropdown_item_title">Property ID</div>
 											<select name="property_ID" id="property_ID" class="dropdown_item_select">
 												<option>Any</option>
@@ -219,7 +186,7 @@
 												<option>ID 2</option>
 											</select>
 										</li>
-										<li class="dropdown_item dropdown_item_5">
+										<li class="dropdown_item">
 											<div class="dropdown_item_title">Property Status</div>
 											<select name="property_status" id="property_status" class="dropdown_item_select">
 												<option>Any</option>
@@ -227,7 +194,7 @@
 												<option>Status 2</option>
 											</select>
 										</li>
-										<li class="dropdown_item dropdown_item_5">
+										<li class="dropdown_item">
 											<div class="dropdown_item_title">Location</div>
 											<select name="property_location" id="property_location" class="dropdown_item_select">
 												<option>Any</option>
@@ -235,7 +202,7 @@
 												<option>Location 2</option>
 											</select>
 										</li>
-										<li class="dropdown_item dropdown_item_5">
+										<li class="dropdown_item">
 											<div class="dropdown_item_title">Property Type</div>
 											<select name="property_type" id="property_type" class="dropdown_item_select">
 												<option>Any</option>
@@ -243,12 +210,7 @@
 												<option>Type 2</option>
 											</select>
 										</li>
-									</ul>
-								</div>
-
-								<div class="search_box_container">
-									<ul class="dropdown_row clearfix">
-										<li class="dropdown_item dropdown_item_6">
+										<li class="dropdown_item dropdown_item_half">
 											<div class="dropdown_item_title">Bedrooms no</div>
 											<select name="bedrooms_no" id="bedrooms_no" class="dropdown_item_select">
 												<option>Any</option>
@@ -256,7 +218,7 @@
 												<option>2</option>
 											</select>
 										</li>
-										<li class="dropdown_item dropdown_item_6">
+										<li class="dropdown_item dropdown_item_half">
 											<div class="dropdown_item_title">Bathrooms no</div>
 											<select name="bathrooms_no" id="bathrooms_no" class="dropdown_item_select">
 												<option>Any</option>
@@ -264,7 +226,7 @@
 												<option>2</option>
 											</select>
 										</li>
-										<li class="dropdown_item dropdown_item_6">
+										<li class="dropdown_item dropdown_item_half">
 											<div class="dropdown_item_title">Min Price</div>
 											<select name="min_price" id="min_price" class="dropdown_item_select">
 												<option>Any</option>
@@ -272,7 +234,7 @@
 												<option>$20000</option>
 											</select>
 										</li>
-										<li class="dropdown_item dropdown_item_6">
+										<li class="dropdown_item dropdown_item_half">
 											<div class="dropdown_item_title">Max Price</div>
 											<select name="max_price" id="max_price" class="dropdown_item_select">
 												<option>Any</option>
@@ -280,7 +242,7 @@
 												<option>$2000000</option>
 											</select>
 										</li>
-										<li class="dropdown_item dropdown_item_6">
+										<li class="dropdown_item dropdown_item_half">
 											<div class="dropdown_item_title">Min Sq Ft</div>
 											<select name="min_sq_ft" id="min_sq_ft" class="dropdown_item_select">
 												<option>Any</option>
@@ -288,18 +250,13 @@
 												<option>Any</option>
 											</select>
 										</li>
-										<li class="dropdown_item dropdown_item_6">
+										<li class="dropdown_item dropdown_item_half">
 											<div class="dropdown_item_title">Max Sq Ft</div>
 											<select name="max_sq_ft" id="max_sq_ft" class="dropdown_item_select">
 												<option>Any</option>
 												<option>Any</option>
 												<option>Any</option>
 											</select>
-										</li>
-										<li class="dropdown_item">
-											<div class="search_button">
-												<input value="search" type="submit" class="search_submit_button">
-											</div>
 										</li>
 									</ul>
 								</div>
@@ -370,40 +327,40 @@
 											</div>
 										</li>
 									</ul>
-								</div>
 
+									<div class="search_button">
+										<input value="search" type="submit" class="search_submit_button">
+									</div>
+								</div>
 							</form>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>		
-	</div>
-
-	<!-- Featured Properties -->
-
-	<div class="featured">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="section_title text-center">
-						<h3>featured properties</h3>
-						<span class="section_subtitle">See our best offers</span>
+						</div>	
 					</div>
 				</div>
-			</div>
 
-			<div class="row featured_row">
-				<div class="col-lg-4 featured_card_col">
+				<!-- Listings -->
 
-					<div class="featured_card_container">
-						<div class="card featured_card trans_300">
-							<div class="featured_panel">featured</div>
-							<img class="card-img-top" src="images/featured_1.jpg" alt="https://unsplash.com/@breather">
-							<div class="card-body">
-								<div class="card-title"><a href="listings_single.html">House in West California</a></div>
-								<div class="card-text">Amazing house in west California.</div>
+				<div class="col-lg-8 listings_col">
+
+					<!-- Listings Item -->
+
+					<div class="listing_item">
+						<div class="listing_item_inner d-flex flex-md-row flex-column trans_300">
+							<div class="listing_image_container">
+								<div class="listing_image">
+									<!-- Image by: https://unsplash.com/@breather -->
+									<div class="listing_background" style="background-image:url(images/listing_1.jpg)"></div>
+								</div>
+								<div class="featured_card_box d-flex flex-row align-items-center trans_300">
+									<img src="images/tag.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									<div class="featured_card_box_content">
+										<div class="featured_card_price_title trans_300">For Sale</div>
+										<div class="featured_card_price trans_300">$540,000</div>
+									</div>
+								</div>
+							</div>
+							<div class="listing_content">
+								<div class="listing_title"><a href="listings_single.html">House in West California</a></div>
+								<div class="listing_text">Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit tempus porttitor.</div>
 								<div class="rooms">
 
 									<div class="room">
@@ -430,22 +387,6 @@
 										</div>
 									</div>
 
-									<div class="room">
-										<span class="room_title">Patio</span>
-										<div class="room_content">
-											<div class="room_image"><img src="images/patio.png" alt=""></div>
-											<span class="room_number">1</span>
-										</div>
-									</div>
-
-									<div class="room">
-										<span class="room_title">Garage</span>
-										<div class="room_content">
-											<div class="room_image"><img src="images/garage.png" alt=""></div>
-											<span class="room_number">2</span>
-										</div>
-									</div>
-
 								</div>
 
 								<div class="room_tags">
@@ -455,31 +396,30 @@
 									<span class="room_tag"><a href="#">Patio</a></span>
 									<span class="room_tag"><a href="#">Hard Wood Floor</a></span>
 								</div>
-
 							</div>
 						</div>
-
-						<div class="featured_card_box d-flex flex-row align-items-center trans_300">
-							<img src="images/tag.svg" alt="https://www.flaticon.com/authors/lucy-g">
-							<div class="featured_card_box_content">
-								<div class="featured_card_price_title">For Sale</div>
-								<div class="featured_card_price">$540,000</div>
-							</div>
-						</div>
-
 					</div>
 
-				</div>
+					<!-- Listings Item -->
 
-				<div class="col-lg-4 featured_card_col">
-
-					<div class="featured_card_container">
-						<div class="card featured_card trans_300">
-							<div class="featured_panel">featured</div>
-							<img class="card-img-top" src="images/featured_2.jpg" alt="https://unsplash.com/@astute">
-							<div class="card-body">
-								<div class="card-title"><a href="listings_single.html">House in West California</a></div>
-								<div class="card-text">add info</div>
+					<div class="listing_item">
+						<div class="listing_item_inner d-flex flex-md-row flex-column trans_300">
+							<div class="listing_image_container">
+								<div class="listing_image">
+									<!-- Image by: https://unsplash.com/@jbriscoe -->
+									<div class="listing_background" style="background-image:url(images/listing_2.jpg)"></div>
+								</div>
+								<div class="featured_card_box d-flex flex-row align-items-center trans_300">
+									<img src="images/tag.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									<div class="featured_card_box_content">
+										<div class="featured_card_price_title trans_300">For Sale</div>
+										<div class="featured_card_price trans_300">$540,000</div>
+									</div>
+								</div>
+							</div>
+							<div class="listing_content">
+								<div class="listing_title"><a href="listings_single.html">Villa in Milano</a></div>
+								<div class="listing_text">Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit tempus porttitor.</div>
 								<div class="rooms">
 
 									<div class="room">
@@ -506,22 +446,6 @@
 										</div>
 									</div>
 
-									<div class="room">
-										<span class="room_title">Patio</span>
-										<div class="room_content">
-											<div class="room_image"><img src="images/patio.png" alt=""></div>
-											<span class="room_number">1</span>
-										</div>
-									</div>
-
-									<div class="room">
-										<span class="room_title">Garage</span>
-										<div class="room_content">
-											<div class="room_image"><img src="images/garage.png" alt=""></div>
-											<span class="room_number">2</span>
-										</div>
-									</div>
-
 								</div>
 
 								<div class="room_tags">
@@ -531,31 +455,31 @@
 									<span class="room_tag"><a href="#">Patio</a></span>
 									<span class="room_tag"><a href="#">Hard Wood Floor</a></span>
 								</div>
-
 							</div>
 						</div>
-
-						<div class="featured_card_box d-flex flex-row align-items-center trans_300">
-							<img src="images/tag.svg" alt="https://www.flaticon.com/authors/lucy-g">
-							<div class="featured_card_box_content">
-								<div class="featured_card_price_title">For Sale</div>
-								<div class="featured_card_price">$540,000</div>
-							</div>
-						</div>
-
+							
 					</div>
 
-				</div>
+					<!-- Listings Item -->
 
-				<div class="col-lg-4 featured_card_col">
-
-					<div class="featured_card_container">
-						<div class="card featured_card trans_300">
-							<div class="featured_panel">featured</div>
-							<img class="card-img-top" src="images/featured_3.jpg" alt="https://unsplash.com/@marcusneto">
-							<div class="card-body">
-								<div class="card-title"><a href="listings_single.html">House in West California</a></div>
-								<div class="card-text">add info</div>
+					<div class="listing_item">
+						<div class="listing_item_inner d-flex flex-md-row flex-column trans_300">
+							<div class="listing_image_container">
+								<div class="listing_image">
+									<!-- Image by: https://unsplash.com/@aahubs -->
+									<div class="listing_background" style="background-image:url(images/listing_3.jpg)"></div>
+								</div>
+								<div class="featured_card_box d-flex flex-row align-items-center trans_300">
+									<img src="images/tag.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									<div class="featured_card_box_content">
+										<div class="featured_card_price_title trans_300">For Sale</div>
+										<div class="featured_card_price trans_300">$540,000</div>
+									</div>
+								</div>
+							</div>
+							<div class="listing_content">
+								<div class="listing_title"><a href="listings_single.html">Villa in West Barcelona</a></div>
+								<div class="listing_text">Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit tempus porttitor.</div>
 								<div class="rooms">
 
 									<div class="room">
@@ -582,19 +506,62 @@
 										</div>
 									</div>
 
+								</div>
+
+								<div class="room_tags">
+									<span class="room_tag"><a href="#">Hottub</a></span>
+									<span class="room_tag"><a href="#">Swimming Pool</a></span>
+									<span class="room_tag"><a href="#">Garden</a></span>
+									<span class="room_tag"><a href="#">Patio</a></span>
+									<span class="room_tag"><a href="#">Hard Wood Floor</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Listings Item -->
+
+					<div class="listing_item">
+						<div class="listing_item_inner d-flex flex-md-row flex-column trans_300">
+							<div class="listing_image_container">
+								<div class="listing_image">
+									<!-- Image by: https://unsplash.com/@pperkins -->
+									<div class="listing_background" style="background-image:url(images/listing_4.jpg)"></div>
+								</div>
+								<div class="featured_card_box d-flex flex-row align-items-center trans_300">
+									<img src="images/tag.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									<div class="featured_card_box_content">
+										<div class="featured_card_price_title trans_300">For Sale</div>
+										<div class="featured_card_price trans_300">$540,000</div>
+									</div>
+								</div>
+							</div>
+							<div class="listing_content">
+								<div class="listing_title"><a href="listings_single.html">Villa in Milano</a></div>
+								<div class="listing_text">Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit tempus porttitor.</div>
+								<div class="rooms">
+
 									<div class="room">
-										<span class="room_title">Patio</span>
+										<span class="room_title">Bedrooms</span>
 										<div class="room_content">
-											<div class="room_image"><img src="images/patio.png" alt=""></div>
-											<span class="room_number">1</span>
+											<div class="room_image"><img src="images/bedroom.png" alt=""></div>
+											<span class="room_number">4</span>
 										</div>
 									</div>
 
 									<div class="room">
-										<span class="room_title">Garage</span>
+										<span class="room_title">Bathrooms</span>
 										<div class="room_content">
-											<div class="room_image"><img src="images/garage.png" alt=""></div>
-											<span class="room_number">2</span>
+											<div class="room_image"><img src="images/shower.png" alt=""></div>
+											<span class="room_number">3</span>
+										</div>
+									</div>
+
+									<div class="room">
+										<span class="room_title">Area</span>
+										<div class="room_content">
+											<div class="room_image"><img src="images/area.png" alt=""></div>
+											<span class="room_number">7100 Sq Ft</span>
 										</div>
 									</div>
 
@@ -607,304 +574,82 @@
 									<span class="room_tag"><a href="#">Patio</a></span>
 									<span class="room_tag"><a href="#">Hard Wood Floor</a></span>
 								</div>
-
 							</div>
 						</div>
-
-						<div class="featured_card_box d-flex flex-row align-items-center trans_300">
-							<img src="images/tag.svg" alt="https://www.flaticon.com/authors/lucy-g">
-							<div class="featured_card_box_content">
-								<div class="featured_card_price_title">For Sale</div>
-								<div class="featured_card_price">$540,000</div>
-							</div>
-						</div>
-
 					</div>
 
-				</div>
+					<!-- Listings Item -->
 
-			</div>
-		</div>
-	</div>
-
-	<!-- Testimonials -->
-
-	<div class="testimonials">
-		<div class="testimonials_background_container prlx_parent">
-			<div class="testimonials_background prlx" style="background-image:url(images/testimonials_background.jpg)"></div>
-		</div>
-		<div class="container">
-
-			<div class="row">
-				<div class="col">
-					<div class="section_title text-center">
-						<h3>clients testimonials</h3>
-						<span class="section_subtitle">See our best offers</span>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-10 offset-lg-1">
-					
-					<div class="testimonials_slider_container">
-
-						<!-- Testimonials Slider -->
-						<div class="owl-carousel owl-theme testimonials_slider">
-							
-							<!-- Testimonials Item -->
-							<div class="owl-item">
-								<div class="testimonials_item text-center">
-									<p class="testimonials_text">TJ was very helpful throughout the negotiation gladly offering us his counsel while respecting our decisions.</p>
-									<div class="testimonial_user">
-										<div class="testimonial_image mx-auto">
-											<img src="images/pic1.jpg" alt="https://unsplash.com/@remdesigns">
-										</div>
-										<div class="testimonial_name">Sam Shaqqur</div>
-										<div class="testimonial_title">Client in California</div>
+					<div class="listing_item">
+						<div class="listing_item_inner d-flex flex-md-row flex-column trans_300">
+							<div class="listing_image_container">
+								<div class="listing_image">
+									<!-- Image by: https://unsplash.com/@breather -->
+									<div class="listing_background" style="background-image:url(images/listing_5.jpg)"></div>
+								</div>
+								<div class="featured_card_box d-flex flex-row align-items-center trans_300">
+									<img src="images/tag.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									<div class="featured_card_box_content">
+										<div class="featured_card_price_title trans_300">For Sale</div>
+										<div class="featured_card_price trans_300">$540,000</div>
 									</div>
 								</div>
 							</div>
-							<!-- Testimonials Item -->
-							<div class="owl-item">
-								<div class="testimonials_item text-center">
-									<p class="testimonials_text">TJ was very helpful throughout the negotiation gladly offering us his counsel while respecting our decisions.</p>
-									<div class="testimonial_user">
-										<div class="testimonial_image mx-auto">
-											<img src="images/pic1.jpg" alt="https://unsplash.com/@remdesigns">
+							<div class="listing_content">
+								<div class="listing_title"><a href="listings_single.html">Villa in West Barcelona</a></div>
+								<div class="listing_text">Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit tempus porttitor.</div>
+								<div class="rooms">
+
+									<div class="room">
+										<span class="room_title">Bedrooms</span>
+										<div class="room_content">
+											<div class="room_image"><img src="images/bedroom.png" alt=""></div>
+											<span class="room_number">4</span>
 										</div>
-										<div class="testimonial_name">Sam Shaqqur</div>
-										<div class="testimonial_title">Client in California</div>
 									</div>
+
+									<div class="room">
+										<span class="room_title">Bathrooms</span>
+										<div class="room_content">
+											<div class="room_image"><img src="images/shower.png" alt=""></div>
+											<span class="room_number">3</span>
+										</div>
+									</div>
+
+									<div class="room">
+										<span class="room_title">Area</span>
+										<div class="room_content">
+											<div class="room_image"><img src="images/area.png" alt=""></div>
+											<span class="room_number">7100 Sq Ft</span>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="room_tags">
+									<span class="room_tag"><a href="#">Hottub</a></span>
+									<span class="room_tag"><a href="#">Swimming Pool</a></span>
+									<span class="room_tag"><a href="#">Garden</a></span>
+									<span class="room_tag"><a href="#">Patio</a></span>
+									<span class="room_tag"><a href="#">Hard Wood Floor</a></span>
 								</div>
 							</div>
-
-							<!-- Testimonials Item -->
-							<div class="owl-item">
-								<div class="testimonials_item text-center">
-									<p class="testimonials_text">TJ was very helpful throughout the negotiation gladly offering us his counsel while respecting our decisions.</p>
-									<div class="testimonial_user">
-										<div class="testimonial_image mx-auto">
-											<img src="images/pic1.jpg" alt="https://unsplash.com/@remdesigns">
-										</div>
-										<div class="testimonial_name">Sam Shaqqur</div>
-										<div class="testimonial_title">Client in California</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<!-- Workflow -->
-
-	<div class="workflow">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="section_title text-center">
-						<h3>see how we operate</h3>
-						<span class="section_subtitle">What you need to do</span>
-					</div>
-				</div>
-			</div>
-
-			<div class="row workflow_row">
-				<div class="workflow_rocket"><img src="images/rocket.png" alt=""></div>
-
-				<!-- Workflow Item -->
-				<div class="col-lg-4 workflow_col">
-					<div class="workflow_item">
-						<div class="workflow_image_container d-flex flex-column align-items-center justify-content-center">
-							<div class="workflow_image_background">
-								<div class="workflow_circle_outer trans_200"></div>
-								<div class="workflow_circle_inner trans_200"></div>
-								<div class="workflow_num text-center trans_200"><span>01.</span></div>
-							</div>
-							<div class="workflow_image">
-								<img src="images/workflow_1.png" alt="">
-							</div>
-							
-						</div>
-						<div class="workflow_item_content text-center">
-							<div class="workflow_title">Choose a Location</div>
-							<p class="workflow_text">....</p>
 						</div>
 					</div>
+
 				</div>
 
-				<!-- Workflow Item -->
-				<div class="col-lg-4 workflow_col">
-					<div class="workflow_item">
-						<div class="workflow_image_container d-flex flex-column align-items-center justify-content-center">
-							<div class="workflow_image_background">
-								<div class="workflow_circle_outer trans_200"></div>
-								<div class="workflow_circle_inner trans_200"></div>
-								<div class="workflow_num text-center trans_200"><span>02.</span></div>
-							</div>
-							<div class="workflow_image">
-								<img src="images/workflow_2.png" alt="">
-							</div>
-							
-						</div>
-						<div class="workflow_item_content text-center">
-							<div class="workflow_title">Find the Perfect Home</div>
-							<p class="workflow_text">...</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- Workflow Item -->
-				<div class="col-lg-4 workflow_col">
-					<div class="workflow_item">
-						<div class="workflow_image_container d-flex flex-column align-items-center justify-content-center">
-							<div class="workflow_image_background">
-								<div class="workflow_circle_outer trans_200"></div>
-								<div class="workflow_circle_inner trans_200"></div>
-								<div class="workflow_num text-center trans_200"><span>03.</span></div>
-							</div>
-							<div class="workflow_image">
-								<img src="images/workflow_3.png" alt="">
-							</div>
-							
-						</div>
-						<div class="workflow_item_content text-center">
-							<div class="workflow_title">Move in your new life</div>
-							<p class="workflow_text">....</p>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<!-- Cities -->
-
-	<div class="cities">
-		<div class="cities_background"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="section_title text-center">
-						<h3>cities clients prefer</h3>
-						<span class="section_subtitle">What you need to do</span>
-					</div>
-				</div>
 			</div>
 
 			<div class="row">
-				<div class="col">
-
-					<!-- Cities Slider -->
-		
-					<div class="cities_slider_container">
-						<div class="owl-carousel owl-theme cities_slider">
-							
-							<!-- City Item -->
-							<div class="owl-item city_item">
-								<a href="#">
-									<div class="city_image">
-										<img src="images/city_1.jpg" alt="">
-									</div>
-									<div class="city_details"><img src="images/search.png" alt=""></div>
-									<div class="city_name"><span>miami</span></div>
-								</a>
-							</div>
-
-							<!-- City Item -->
-							<div class="owl-item city_item">
-								<a href="#">
-									<div class="city_image">
-										<img src="images/city_2.jpg" alt="">
-									</div>
-									<div class="city_details"><img src="images/search.png" alt=""></div>
-									<div class="city_name"><span>dublin</span></div>
-								</a>
-							</div>
-
-							<!-- City Item -->
-							<div class="owl-item city_item">
-								<a href="#">
-									<div class="city_image">
-										<img src="images/city_3.jpg" alt="">
-									</div>
-									<div class="city_details"><img src="images/search.png" alt=""></div>
-									<div class="city_name"><span>vienna</span></div>
-								</a>
-							</div>
-
-							<!-- City Item -->
-							<div class="owl-item city_item">
-								<a href="#">
-									<div class="city_image">
-										<img src="images/city_4.jpg" alt="">
-									</div>
-									<div class="city_details"><img src="images/search.png" alt=""></div>
-									<div class="city_name"><span>marbella</span></div>
-								</a>
-							</div>
-
-							<!-- City Item -->
-							<div class="owl-item city_item">
-								<a href="#">
-									<div class="city_image">
-										<img src="images/city_5.jpg" alt="">
-									</div>
-									<div class="city_details"><img src="images/search.png" alt=""></div>
-									<div class="city_name"><span>new york</span></div>
-								</a>
-							</div>
-
-							<!-- City Item -->
-							<div class="owl-item city_item">
-								<a href="#">
-									<div class="city_image">
-										<img src="images/city_6.jpg" alt="">
-									</div>
-									<div class="city_details"><img src="images/search.png" alt=""></div>
-									<div class="city_name"><span>geneva</span></div>
-								</a>
-							</div>
-							
-						</div>
-						
-						<div class="cities_prev cities_nav d-flex flex-row align-items-center justify-content-center trans_200">
-							<img src="images/nav_left.png" alt="">
-						</div>
-
-						<div class="cities_next cities_nav d-flex flex-row align-items-center justify-content-center trans_200">
-							<img src="images/nav_right.png" alt="">
-						</div>
-
+				<div class="col clearfix">
+					<div class="listings_nav">
+						<ul>
+							<li class="listings_nav_item active"><a href="#">01.</a></li>
+							<li class="listings_nav_item"><a href="#">02.</a></li>
+							<li class="listings_nav_item"><a href="#">03.</a></li>
+						</ul>
 					</div>
-
-				</div>
-					
-			</div>
-
-		</div>
-	</div>
-
-	<!-- Call to Action -->
-
-	<div class="cta_1">
-		<div class="cta_1_background" style="background-image:url(images/cta_1.jpg)"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					
-					<div class="cta_1_content d-flex flex-lg-row flex-column align-items-center justify-content-start">
-						<h3 class="cta_1_text text-lg-left text-center">Do you want to talk with one of our <span>real estate experts?</span></h3>
-						<div class="cta_1_phone">Call now:   +1 (951)-541-6191</div>
-					</div>
-					
 				</div>
 			</div>
 		</div>
@@ -963,7 +708,7 @@
 							<a href="#">
 								<div class="logo">
 									<img src="images/logo.png" alt="">
-									<span>Team Echo Realty</span>
+									<span>the estate</span>
 								</div>
 							</a>
 						</div>
@@ -978,7 +723,7 @@
 						</ul>
 					</div>
 					<div class="footer_about">
-						<p>About us</p>
+						<p>Lorem ipsum dolor sit amet, cons ectetur  quis ferme adipiscing elit. Suspen dis se tellus eros, placerat quis ferme ntum et, viverra sit amet lacus. Nam gravida  quis ferme semper augue.</p>
 					</div>
 				</div>
 				
@@ -1018,15 +763,19 @@
 					<ul class="contact_info_list">
 						<li class="contact_info_item d-flex flex-row">
 							<div><div class="contact_info_icon"><img src="images/placeholder.svg" alt=""></div></div>
-							<div class="contact_info_text">Temecula, CA</div>
+							<div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
 						</li>
 						<li class="contact_info_item d-flex flex-row">
 							<div><div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div></div>
-							<div class="contact_info_text">951-541-6191</div>
+							<div class="contact_info_text">2556-808-8613</div>
 						</li>
 						<li class="contact_info_item d-flex flex-row">
 							<div><div class="contact_info_icon"><img src="images/message.svg" alt=""></div></div>
-							<div class="contact_info_text"><a href="mailto:thabitjubran@gmail.com?Subject=Hello" target="_top">thabitjubran@gmail.com</a></div>
+							<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
+						</li>
+						<li class="contact_info_item d-flex flex-row">
+							<div><div class="contact_info_icon"><img src="images/planet-earth.svg" alt=""></div></div>
+							<div class="contact_info_text"><a href="https://colorlib.com">www.colorlib.com</a></div>
 						</li>
 					</ul>
 				</div>
@@ -1039,7 +788,8 @@
 
 	<div class="credits">
 		<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
 	</div>
 
 </div>
@@ -1047,15 +797,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/greensock/TweenMax.min.js"></script>
-<script src="plugins/greensock/TimelineMax.min.js"></script>
-<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="plugins/greensock/animation.gsap.min.js"></script>
-<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
 <script src="plugins/easing/easing.js"></script>
-<script src="js/custom.js"></script>
+<script src="js/listings_custom.js"></script>
 </body>
 
 </html>
