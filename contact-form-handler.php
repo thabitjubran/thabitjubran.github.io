@@ -1,6 +1,6 @@
 <?php 
-	$name = $_Post['contact_form_name'];
-	$visitor_email = $_Post['contact_form_email'];
+	$name = $_POST['contact_form_name'];
+	$visitor_email = $_POST['contact_form_email'];
 	$message = $_POST['contact_form_message'];
 
 	$email_from = 'samuelshaqqur@gmail.com';
