@@ -1,7 +1,7 @@
 <?php 
-	$name = $_POST['contact_form_name'];
-	$visitor_email = $_POST['contact_form_email'];
-	$message = $_POST['contact_form_message'];
+	$name = $_GET['contact_form_name'];
+	$visitor_email = $_GET['contact_form_email'];
+	$message = $_GET['contact_form_message'];
 
 	$email_from = 'samuelshaqqur@gmail.com';
 	
